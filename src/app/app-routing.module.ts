@@ -10,15 +10,6 @@ const routes: Routes = [
   {path:'', pathMatch: 'full', redirectTo : 'connexion'},
   { path: 'gestion', loadChildren: () => import('./pages/gestion/gestion.module').then(m => m.GestionModule) },
   { path: 'auth', loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule) },
-  { path: 'signin', component : SigninComponent },
-  { path: 'signup', component : SignupComponent },
-  { path: 'playlists', component : PlaylistsComponent },
-  { path: 'playlist-details', component : PlaylistDetailsComponent },
-  { path: 'create-playlist', component : CreatePlaylistComponent },
-
-  
- 
-
 ];
 
 @NgModule({
